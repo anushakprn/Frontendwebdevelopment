@@ -1,27 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Table with Nested Tables</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Card</title>
     <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
-        th, td {
-            border: 5px solid rgb(228, 7, 7);
-        }
-        body{
-            margin: 10px;
-            padding: 370px;
-            padding-top: 10px;
-        }
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.header-text h1, .header-text h2 {
+    margin: 0;
+    color: #C8102E;
+}
+
+.header-text p {
+    margin: 5px 0;
+}
+
+.student-info {
+    margin-bottom: 20px;
+}
+
+.student-info p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.grade-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.grade-table th, .grade-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.grade-table th {
+    background-color: #C8102E;
+    color: #fff;
+}
+
+.credits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.credits p {
+    margin: 5px 0;
+    line-height: 1.6;
+    font-weight: bold;
+}
 
     </style>
 </head>
-<body class="container">
-    <img src="MBU-LOGO.png" alt="" width="150px">
-    <h1>fvcd</h1>
+<body>
+    <div class="container">
+        <header>
+            <img src="t_500x300.jpeg" alt="MBU Logo" class="logo">
+            <div class="header-text">
+                <h1>MOHAN BABU UNIVERSITY</h1>
+                <p>Sree Sainath Nagar, Tirupati - 517 102, A.P.</p>
+                <h2>GRADE CARD</h2>
+                <p>III-Semester - Batch-II (MBU22) Nov-2023</p>
+            </div>
+        </header>
+
+        <div class="student-info">
+            <p><strong>Student Name:</strong> KOTHAPALLI ANUSHA</p>
+            <p><strong>UID Number:</strong> 22102A030282</p>
+            <p><strong>Program Name:</strong> B.Tech. - Computer Science and Engineering (Data Science)</p>
+            <p><strong>Batch:</strong> 2022-2023</p>
+            <p><strong>Roll Number:</strong> 22102A030282</p>
+            <p><strong>Father's Name:</strong> K PATTABHI RAMA NAIDU</p>
+            <p><strong>Mother's Name:</strong> KOTHAPALLI NEELIMA</p>
+        </div>
+
+        <table class="grade-table">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                    <th>Grade Point</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>22LG107601M</td>
+                    <td>PROFESSIONAL ETHICS AND HUMAN VALUES</td>
+                    <td>2</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>22CS102003</td>
+                    <td>DATA STRUCTURES</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>22CS102005</td>
+                    <td>DATABASE MANAGEMENT SYSTEMS</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>22DS102001</td>
+                    <td>FOUNDATIONS OF DATA SCIENCE</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>22LG201701</td>
+                    <td>PERSONALITY DEVELOPMENT</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>22CM101402M</td>
+                    <td>PRINCIPLES OF BUSINESS ECONOMICS AND ACCOUNTANCY</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>22AI101019M</td>
+                    <td>FOUNDATIONS OF OPERATING SYSTEMS</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>22MM101405</td>
+                    <td>NUMERICAL METHODS, PROBABILITY AND STATISTICS</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="credits">
+            <p><strong>Credits Registered / Completed:</strong> 26 / 26</p>
+            <p><strong>Credits Registered:</strong> 26</p>
+            <p><strong>Credits Completed:</strong> 26</p>
+            <p><strong>CGPA:</strong> 9.58</p>
+            <p><strong>SGPA:</strong> 9.73</p>
+        </div>
+    </div>
 </body>
 </html>
